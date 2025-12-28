@@ -1,4 +1,4 @@
-package com.kennendy.first_api;
+package produtos;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
