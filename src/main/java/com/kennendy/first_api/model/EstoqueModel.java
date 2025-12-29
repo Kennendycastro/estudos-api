@@ -1,4 +1,4 @@
-package estoque;
+package com.kennendy.first_api.model;
 
 
 import jakarta.persistence.Entity;
@@ -10,7 +10,6 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import produtos.ProdutoModel;
 
 @Entity
 @Table(name = "tb_estoque")

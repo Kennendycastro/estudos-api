@@ -1,6 +1,5 @@
-package produtos;
+package com.kennendy.first_api.model;
 
-import estoque.EstoqueModel;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
