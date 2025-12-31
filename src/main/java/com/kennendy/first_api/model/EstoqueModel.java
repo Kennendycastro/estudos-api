@@ -19,12 +19,12 @@ import lombok.NoArgsConstructor;
 public class EstoqueModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idestoque;
     private String nome;
     private String tipo;
     //Um estoque pode ter varios produtos
-    @OneToMany(mappedBy = "estoque")
-    private ProdutoModel produto;
+    //@OneToMany(mappedBy = "estoque")
+    //private ProdutoModel produto;
 
 
 }

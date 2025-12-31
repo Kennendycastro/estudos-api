@@ -19,18 +19,18 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ProdutoModel {
+    //nome, valor, categoria
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long IdProduto;
+    private long idproduto;
     private String nome;
     private double valor;
     private String categoria;
-
     //Um produto tem um unico estoque
-    @ManyToOne
+    //@ManyToOne
     //FK
-    @JoinColumn(name = "estoque_id")
-    private EstoqueModel estoque;
+    //@JoinColumn(name = "estoque_id")
+    //private EstoqueModel estoque;
         
 }
