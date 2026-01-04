@@ -1,5 +1,6 @@
 package com.kennendy.first_api.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,7 +8,6 @@ import jakarta.persistence.Id;
 //import jakarta.persistence.JoinColumn;
 //import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 // Cria uma tabela e o nome
 @Table(name = "tb_cadastro")
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 public class ProdutoModel {
     //nome, valor, categoria
@@ -24,9 +23,15 @@ public class ProdutoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idproduto;
+
+    @Column(nullable = false)
     private String nome;
+    @Column(nullable = false)
     private double valor;
+    @Column(nullable = false)
     private String categoria;
+
+
     //Um produto tem um unico estoque
     //@ManyToOne
     //FK
